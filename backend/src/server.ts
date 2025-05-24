@@ -35,5 +35,6 @@ app.get("/", (_req, res) => {
   res.send("🎉 RSVP-backend är igång!");
 });
 
-// 🟢 Starta servern
-app.listen(PORT, () => console.log(`Servern körs på http://localhost:${PORT}`));
+export default app; 
+// // 🟢 Starta servern
+// app.listen(PORT, () => console.log(`Servern körs på http://localhost:${PORT}`));
