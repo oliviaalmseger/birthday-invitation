@@ -1,0 +1,146 @@
+
+.rsvp-form {
+  background-image: url('/assets/rsvp.png');
+  background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  padding: 4rem 2rem 5rem;
+
+  /* height: 400px; */
+  min-height: 400px;
+ width: 90vw;
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: 'Montserrat', cursive;
+
+ display: flex;
+ flex-direction: column;
+ /* justify-content: center; */
+ align-items: center;
+ box-sizing: border-box;
+}
+
+.rsvp-form h2 {
+    font-family: "Beau Rivage", cursive;
+    font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #951c1c;
+  background: none;
+}
+
+.rsvp-form label,
+.rsvp-form div {
+    width: 100%;
+    max-width: 300px;
+    /* margin-bottom: 1rem; */
+}
+
+.rsvp-form label {
+  display: block;
+  color: #951c1c;
+  /* margin-bottom: 1rem;
+  font-weight: 500; */
+  width: 100%;
+  max-width: 300px;
+}
+
+.rsvp-form input[type='text'] {
+  width: 70%;
+  /* margin-left: 10px; */
+  padding: 0.4rem;
+  margin-top: 0.1rem;
+  /* border: 1px solid #ccc; */
+  border: none;
+  border-bottom: 2px solid #951c1c;
+
+  background: transparent;
+  outline: none;
+
+  font-family: 'Montserrat', cursive;
+  font-size: 1rem;
+  color: #951c1c;
+
+  transition: border-color 0.3s ease;
+}
+
+.rsvp-form input[type='text']:focus {
+  border-bottom-color: #ff5c7a;
+}
+
+ .rsvp-form input[type='radio'] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #ffced5;
+  border: 2px solid #951c1c;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.rsvp-form input[type='radio']:checked {
+  background-color: #ffced5;
+  border: 2px solid #951c1c;
+}
+
+.rsvp-form input[type='radio']::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #951c1c;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.rsvp-form input[type='radio']:checked::before {
+  opacity: 1;
+}
+
+
+.rsvp-form div {
+  margin-bottom: 1.2rem;
+  width: 80%;
+
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem auto;
+}
+
+.rsvp-form button {
+  border: none;
+  background-color: #951c1c;
+  color: white;
+  
+  padding: 0.6rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 1.9rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  align-self: center;
+  font-family: Montserrat;
+}
+
+.rsvp-form button:hover {
+  background-color: #ffced5;
+   color: #951c1c;
+  transform: scale(1.05);
+  border: 1px solid #951c1c;
+}
+
+.rsvp-form p {
+  margin-top: 1rem;
+  font-family: Montserrat;
+  text-align: center;
+  font-weight: bold;
+  color: #951c1c;
+}

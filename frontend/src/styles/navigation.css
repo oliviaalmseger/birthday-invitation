@@ -1,0 +1,35 @@
+.nav-container {
+  padding: 1rem;
+  font-family: Walter Turncoat;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  color: #951c1c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: border-bottom 0.2s ease;
+  margin: 0 20px;
+}
+
+nav li a:hover {
+  color: white;
+}
+
+nav li .underline {
+ text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-style: wavy;
+  text-underline-offset: 4px;
+  text-decoration-color: #951c1c;
+}
