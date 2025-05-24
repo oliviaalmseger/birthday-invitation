@@ -39,6 +39,10 @@ const response = await fetch(`${API_URL}/rsvp`, {
         setMessage(data.message);
         setName("");
         setAttending(null);
+
+          setTimeout(() => {
+            setMessage("");
+            }, 2000);
       } else {
         setMessage(data.error || "Något gick fel");
       }
