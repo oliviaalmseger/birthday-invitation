@@ -30,6 +30,10 @@ mongoose.connection.once('open', () => {
 // 🧭 Använd routes
 app.use('/rsvp', rsvpRoutes);
 
+// 👇 Root-route för att undvika 404 på /
+app.get("/", (_req, res) => {
+  res.send("🎉 RSVP-backend är igång!");
+});
 
 // 🟢 Starta servern
 app.listen(PORT, () => console.log(`Servern körs på http://localhost:${PORT}`));
