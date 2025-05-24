@@ -7,6 +7,8 @@ export const RsvpForm = () => {
   const [attending, setAttending] = useState<boolean | null>(null);
   const [message, setMessage] = useState("");
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -26,7 +28,7 @@ if (attending === null) {
 }
 
     try {
-      const response = await fetch("http://localhost:4000/rsvp", {
+const response = await fetch(`${API_URL}/rsvp`, {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({ name, attending }),
