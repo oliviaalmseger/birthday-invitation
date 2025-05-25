@@ -46,22 +46,29 @@
 }
 
 .rsvp-form input[type='text'] {
-  width: 70%;
-  /* margin-left: 10px; */
+  width: 60%;
+  margin-left: 16px;
   padding: 0.4rem;
   margin-top: 0.1rem;
-  /* border: 1px solid #ccc; */
   border: none;
   border-bottom: 2px solid #951c1c;
 
   background: transparent;
   outline: none;
-
   font-family: 'Montserrat', cursive;
   font-size: 1rem;
   color: #951c1c;
 
   transition: border-color 0.3s ease;
+
+-webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
+}
+
+.rsvp-form input[type='text']:-webkit-autofill {
+  box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #951c1c;
 }
 
 .rsvp-form input[type='text']:focus {
@@ -77,6 +84,7 @@
   width: 18px;
   height: 18px;
   position: relative;
+  margin-right: 16px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -102,7 +110,6 @@
 .rsvp-form input[type='radio']:checked::before {
   opacity: 1;
 }
-
 
 .rsvp-form div {
   margin-bottom: 1.2rem;
