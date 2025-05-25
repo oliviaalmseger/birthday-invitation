@@ -10,3 +10,9 @@ img {
     max-width: 100%;
     object-fit: contain;
 }
+@media (max-width: 480px) {
+  .welcome-container {
+    align-items: flex-start;
+    padding-top: 0.2rem;
+  }
+}
